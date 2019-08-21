@@ -1,4 +1,6 @@
 # Sequenza-pipeline
 Somatic CNA pipeline
 
-docker build ./ -t seqz
+```
+docker build -t seqz .
+```
