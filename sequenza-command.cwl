@@ -20,14 +20,20 @@ inputs:
     type: File
     inputBinding:
       position: 2
+    secondaryFiles:
+      - .bai
   normal-bam:
     type: File
     inputBinding:
       position: 3
+    secondaryFiles:
+      - .bai
   reference-fasta:
     type: File
     inputBinding:
       position: 4
+    secondaryFiles:
+      - .fai      
   gc-wiggle:
     type: File
     inputBinding:
