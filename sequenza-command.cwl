@@ -1,7 +1,7 @@
 #!/usr/bin/env cwl-runner
 
 cwlVersion: v1.0
-class: CommandLineTools
+class: CommandLineTool
 id: Sequenza-command
 label: Sequenza-command
 
