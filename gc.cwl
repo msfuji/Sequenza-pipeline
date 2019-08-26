@@ -7,7 +7,7 @@ label: GC-wiggle
 
 requirements:
   DockerRequirement:
-    dockerPull: seqz
+    dockerPull: mfrkn/sequenza-pipeline:latest
 
 baseCommand: ["bash", "/opt/gc.sh"]
 inputs:
@@ -19,4 +19,4 @@ outputs:
   gc-wiggle:
     type: File
     outputBinding:
-      glob: gc50Base.wig.gz
+      glob: *.gc50Base.wig.gz
