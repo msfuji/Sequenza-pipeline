@@ -12,7 +12,7 @@ requirements:
 baseCommand: ["bash", "/opt/sequenza-command.sh"]
 
 inputs:
-  sample_id:
+  sample-id:
     type: string
     inputBinding:
       position: 1
