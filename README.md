@@ -1,7 +1,7 @@
 # Sequenza-pipeline
 Somatic CNA pipeline
 
-Build docer image locally,
+Build docker image locally,
 ```
 docker build -t sequenza-pipeline .
 ```
