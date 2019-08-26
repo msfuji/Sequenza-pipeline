@@ -1,0 +1,25 @@
+sample-id: test_sample
+
+tumor-bam:
+  type: File
+  path: /path/to/tumor.bam
+  secondaryFiles:
+    - .bai
+
+normal-bam:
+  type: File
+  path: /path/to/normal.bam
+  secondaryFiles:
+    - .bai
+
+reference-fasta:
+  type: File
+  path: /home/w3varann/.genomon_local/genomon_pipeline-2.6.1/database/GRCh37/GRCh37.fa
+  secondaryFiles:
+    - .fai
+
+gc-wiggle:
+  type: File
+  path: /path/to/GRCh37.gc50Base.wig.gz
+
+num-threads: 1
