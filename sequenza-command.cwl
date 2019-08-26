@@ -41,60 +41,60 @@ outputs:
   cn_bars:
     type: File
     outputBinding:
-      glob: *_CN_bars.pdf
+      glob: '*_CN_bars.pdf'
   cp_contours:
     type: File
     outputBinding:
-      glob: *_CP_contours.pdf
+      glob: '*_CP_contours.pdf'
   alternative_fit:
     type: File
     outputBinding:
-      glob: *_alternative_fit.pdf
+      glob: '*_alternative_fit.pdf'
   alternative_solutions:
     type: File
     outputBinding:
-      glob: *_alternative_solutions.txt
+      glob: '*_alternative_solutions.txt'
   chromosome_depths:
     type: File
     outputBinding:
-      glob: *_chromosome_depths.pdf
+      glob: '*_chromosome_depths.pdf'
   chromosome_view:
     type: File
     outputBinding:
-      glob: *_chromosome_view.pdf
+      glob: '*_chromosome_view.pdf'
   confints_cp:
     type: File
     outputBinding:
-      glob: *_confints_CP.txt
+      glob: '*_confints_CP.txt'
   gc_plots:
     type: File
     outputBinding:
-      glob: *_gc_plots.pdf
+      glob: '*_gc_plots.pdf'
   genome_view:
     type: File
     outputBinding:
-      glob: *_genome_view.pdf
+      glob: '*_genome_view.pdf'
   model_fit:
     type: File
     outputBinding:
-      glob: *_model_fit.pdf
+      glob: '*_model_fit.pdf'
   mutations:
     type: File
     outputBinding:
-      glob: *_mutations.txt
+      glob: '*_mutations.txt'
   segments:
     type: File
     outputBinding:
-      glob: *_segments.txt
+      glob: '*_segments.txt'
   sequenza_cp_table:
     type: File
     outputBinding:
-      glob: *_sequenza_cp_table.RData
+      glob: '*_sequenza_cp_table.RData'
   sequenza_extract:
     type: File
     outputBinding:
-      glob: *_sequenza_extract.RData
+      glob: '*_sequenza_extract.RData'
   sequenza_log:
     type: File
     outputBinding:
-      glob: *_sequenza_log.txt
+      glob: '*_sequenza_log.txt'
