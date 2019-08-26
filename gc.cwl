@@ -8,6 +8,8 @@ label: GC-wiggle
 requirements:
   DockerRequirement:
     dockerPull: mfrkn/sequenza-pipeline:latest
+  ResourceRequirement:
+      ramMin: 4096
 
 baseCommand: ["bash", "/opt/gc.sh"]
 inputs:
