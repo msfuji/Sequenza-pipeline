@@ -1,11 +1,11 @@
 # Sequenza-pipeline
 Somatic CNA pipeline
 
-Build docker image locally,
+Docker image can be built locally,
 ```
 docker build -t sequenza-pipeline .
 ```
-or pull docker image from Docher Hub.
+or pulled from Docher Hub.
 ```
 docker pull mfrkn/sequenza-pipeline
 ```
