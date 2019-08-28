@@ -1,5 +1,5 @@
 # Sequenza-pipeline
-Somatic CNA pipeline. List tumor/normal BAM files as a sample config file for Genomon2. Use `[bam_import]` directive.
+Somatic CNA pipeline.
 
 ## Requirements
 - [cwltool](https://github.com/common-workflow-language/cwltool)
@@ -11,7 +11,9 @@ Somatic CNA pipeline. List tumor/normal BAM files as a sample config file for Ge
 git clone https://github.com/msfuji/Sequenza-pipeline.git
 ```
 #### 2. Edit config files
-Edit `sequenza-workflow.yaml`.
+- List BAM files of matched tumor/normals in sample.csv. Acceptable file format is a sample config file of Genomon2. Use `[bam_import]` to specify BAM files. Use `[mutation_call]` to pair tumors and normals. Panel filed of `[mutation_call]` is ignored.
+- Specify file path for reference human genome GRCh37 as `ref_fasta` of genomon.cfg. Other fields are ignored.
+- Specify your sample.csv and genomon.cfg in `sequenza-workflow.yaml` .
 
 #### 3. Pull docker image from Docher Hub.
 ```
