@@ -1,12 +1,12 @@
 # Sequenza-pipeline
 Somatic CNA pipeline
 
-1. Pull docker image from Docher Hub.
+##1. Pull docker image from Docher Hub.
 ```
 docker pull mfrkn/sequenza-pipeline
 ```
-1. Edit config file `sequenza-workflow.yaml`.
-1. Run pipeline.
+##2. Edit config file `sequenza-workflow.yaml`.
+##3. Run pipeline.
 ```
 cwl-runner sequenza-workflow.cwl sequenza-workflow.yaml
 ```
