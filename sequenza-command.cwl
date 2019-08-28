@@ -8,6 +8,8 @@ label: Sequenza-command
 requirements:
   DockerRequirement:
     dockerPull: mfrkn/sequenza-pipeline:latest
+  ResourceRequirement:
+    ramMin: 8192    
 
 baseCommand: ["bash", "/opt/sequenza-command.sh"]
 
@@ -33,7 +35,7 @@ inputs:
     inputBinding:
       position: 4
     secondaryFiles:
-      - .fai      
+      - .fai
   gc-wiggle:
     type: File
     inputBinding:
