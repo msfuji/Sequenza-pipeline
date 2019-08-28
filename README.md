@@ -1,13 +1,23 @@
 # Sequenza-pipeline
-Somatic CNA pipeline
+Somatic CNA pipeline. List tumor/normal BAM files as a sample config file for Genomon2. Use `[bam_import]` directive.
 
-#### 1. Pull docker image from Docher Hub.
+## Requirements
+- [cwltool](https://github.com/common-workflow-language/cwltool)
+- [Docker](https://www.docker.com/) or [Singularity](https://sylabs.io/)
+
+## Usage
+#### 1. Download pipeline
+```
+git clone https://github.com/msfuji/Sequenza-pipeline.git
+```
+#### 2. Edit config files
+Edit `sequenza-workflow.yaml`.
+
+#### 3. Pull docker image from Docher Hub.
 ```
 docker pull mfrkn/sequenza-pipeline
 ```
-#### 2. Edit config file
-Edit `sequenza-workflow.yaml`.
-#### 3. Run pipeline
+#### 4. Run pipeline
 ```
 cwl-runner sequenza-workflow.cwl sequenza-workflow.yaml
 ```
