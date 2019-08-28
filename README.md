@@ -3,7 +3,9 @@ Somatic CNA pipeline. List tumor/normal BAM files as a sample config file for Ge
 
 ## Requirements
 - [cwltool](https://github.com/common-workflow-language/cwltool)
+- [Docker](https://www.docker.com/) or [Singularity](https://sylabs.io/)
 
+## Usage
 #### 1. Download pipeline
 ```
 git clone https://github.com/msfuji/Sequenza-pipeline.git
