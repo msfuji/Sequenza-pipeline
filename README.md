@@ -15,7 +15,7 @@ git clone https://github.com/msfuji/Sequenza-pipeline.git
 - Specify file path for reference human genome GRCh37 as `ref_fasta` of genomon.cfg. Other fields are ignored.
 - Specify your sample.csv and genomon.cfg in `sequenza-workflow.yaml` .
 
-#### 3. Pull docker image from Docher Hub.
+#### 3. Pull docker image from Docker Hub.
 ```
 docker pull mfrkn/sequenza-pipeline
 ```
