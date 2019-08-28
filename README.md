@@ -2,8 +2,7 @@
 Somatic CNA pipeline. List tumor/normal BAM files as a sample config file for Genomon2. Use `[bam_import]` directive.
 
 ## Requirements
-- cwltool
-https://github.com/common-workflow-language/cwltool
+- [cwltool](https://github.com/common-workflow-language/cwltool)
 
 #### 1. Download pipeline
 ```
