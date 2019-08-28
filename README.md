@@ -5,9 +5,7 @@ Somatic CNA pipeline
 ```
 docker pull mfrkn/sequenza-pipeline
 ```
-
 1. Edit config file `sequenza-workflow.yaml`.
-
 1. Run pipeline.
 ```
 cwl-runner sequenza-workflow.cwl sequenza-workflow.yaml
