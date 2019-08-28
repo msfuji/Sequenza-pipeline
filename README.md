@@ -1,5 +1,10 @@
 # Sequenza-pipeline
-Somatic CNA pipeline
+Somatic CNA pipeline. List tumor/normal BAM files as a sample config file for Genomon2. Use `[bam_import]` directive.
+
+#### 1. Download pipeline
+```
+git clone https://github.com/msfuji/Sequenza-pipeline.git
+```
 
 #### 1. Pull docker image from Docher Hub.
 ```
