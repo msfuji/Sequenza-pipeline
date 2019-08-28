@@ -21,7 +21,7 @@ docker pull mfrkn/sequenza-pipeline
 ```
 #### 4. Run pipeline
 ```
-cwl-runner sequenza-workflow.cwl sequenza-workflow.yaml
+cwl-runner cwl/sequenza-workflow.cwl sequenza-workflow.yaml
 ```
 Alternatively, if you are using SHIROKANE supercomputer, try
 ```
