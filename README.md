@@ -7,7 +7,7 @@ docker pull mfrkn/sequenza-pipeline
 ```
 #### 2. Edit config file
 Edit `sequenza-workflow.yaml`.
-#### 3. Run pipeline.
+#### 3. Run pipeline
 ```
 cwl-runner sequenza-workflow.cwl sequenza-workflow.yaml
 ```
