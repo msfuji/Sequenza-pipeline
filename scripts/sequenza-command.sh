@@ -59,3 +59,4 @@ sequenza-utils bam2seqz -n ${normal_bam} -t ${tumor_bam} \
   -o ${sample_id}.small.seqz.gz
 
 Rscript /opt/sequenza-command.R ${sample_id} ${sample_id}.small.seqz.gz
+rm ${sample_id}.small.seqz.gz
