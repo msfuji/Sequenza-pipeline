@@ -9,7 +9,7 @@ requirements:
   DockerRequirement:
     dockerPull: mfrkn/sequenza-pipeline:latest
   ResourceRequirement:
-    ramMin: 8192    
+    ramMin: 8192
 
 baseCommand: ["bash", "/opt/sequenza-command.sh"]
 
@@ -18,32 +18,33 @@ inputs:
     type: string
     inputBinding:
       position: 1
+      prefix: -s
   tumor-bam:
     type: File
     inputBinding:
       position: 2
+      prefix: -t
     secondaryFiles:
       - .bai
   normal-bam:
     type: File
     inputBinding:
       position: 3
+      prefix: -n
     secondaryFiles:
       - .bai
   reference-fasta:
     type: File
     inputBinding:
       position: 4
+      prefix: -r
     secondaryFiles:
       - .fai
-  gc-wiggle:
-    type: File
-    inputBinding:
-      position: 5
   num-threads:
     type: int
     inputBinding:
-      position: 6
+      position: 5
+      prefix: -c
 
 outputs:
   cn_bars:
