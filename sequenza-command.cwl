@@ -47,6 +47,10 @@ inputs:
       prefix: -c
 
 outputs:
+  seqz:
+    type: File
+  outputBinding:
+    glob: '*.seqz.gz'
   cn_bars:
     type: File
     outputBinding:
