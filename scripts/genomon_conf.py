@@ -10,14 +10,14 @@ if sys.version_info.major == 2:
     import ConfigParser as cp
 else:
     import configparser as cp
-from genomon_pipeline.__init__ import __version__
-import genomon_pipeline.config.run_conf as rc
+# from genomon_pipeline.__init__ import __version__
+# import genomon_pipeline.config.run_conf as rc
 
 global genomon_conf
 
 genomon_conf = cp.SafeConfigParser()
 
-software_version ={'genomon_pipeline':'genomon_pipeline-'+__version__}
+# software_version ={'genomon_pipeline':'genomon_pipeline-'+__version__}
 
 dna_reference_list = ["ref_fasta",
                       "interval_list",
