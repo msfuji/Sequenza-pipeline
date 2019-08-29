@@ -1,3 +1,0 @@
-reference-fasta:
-  class: File
-  path: /home/w3varann/.genomon_local/genomon_pipeline-2.6.1/database/GRCh37/GRCh37.fa
