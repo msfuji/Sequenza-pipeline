@@ -13,7 +13,6 @@ RUN apt-get update && apt-get install -y \
 RUN R -q -e "setRepositories(graphics = FALSE, ind = 1:6); install.packages(\"sequenza\")"
 RUN pip install sequenza-utils
 
-COPY scripts/gc.sh \
-    scripts/sequenza-command.sh \
+COPY scripts/sequenza-command.sh \
     scripts/sequenza-command.R \
     /opt/
