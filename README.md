@@ -39,5 +39,5 @@ cd Sequenza-pipeline
 - Specify file path for reference human genome GRCh37 as `ref_fasta` of genomon.cfg. Other fields are ignored.
 #### 4. Run pipeline
 ```
-python start-shirokane.py genomon.cfg sample.csv
+python start.py genomon.cfg sample.csv
 ```
