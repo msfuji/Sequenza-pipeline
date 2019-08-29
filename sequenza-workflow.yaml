@@ -1,7 +1,0 @@
-sample-conf:
-  class: File
-  path: /path/to/sample.csv
-
-genomon-conf:
-  class: File
-  path: /path/to/genomon.cfg
