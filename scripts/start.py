@@ -62,7 +62,7 @@ sample_conf.parse_file(sample_conf_file)
 # analyze pairs of tumor/normal
 #
 cwd = os.getcwd()
-run_script = os.path.join(cwd, 'scripts', 'run-cwl.sh')
+qsub_script = os.path.join(cwd, 'scripts', 'run-cwl.sh')
 cwl_file = os.path.join(cwd, 'sequenza-command.cwl')
 for tumor_id, normal_id, _ in sample_conf.mutation_call:
     tumor_bam = sample_conf.bam_import[tumor_id]
