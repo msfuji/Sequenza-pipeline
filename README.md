@@ -1,5 +1,5 @@
 # Sequenza-pipeline
-Somatic CNA pipeline.
+Analyze somatic copy number alteration of tumor using [Sequenza](http://www.cbs.dtu.dk/biotools/sequenza/). WGS/WES BAM files of matched tumor and normal are analyzed.
 
 ## Requirements
 - [cwltool](https://github.com/common-workflow-language/cwltool)
@@ -35,7 +35,7 @@ git clone https://github.com/msfuji/Sequenza-pipeline.git
 cd Sequenza-pipeline
 ```
 #### 3. Prepare config files
-- List BAM files of matched tumor/normals in sample.csv. Acceptable file format is a sample config file of Genomon2. Use `[bam_import]` to specify BAM files. Use `[mutation_call]` to pair tumors and normals. Panel field of `[mutation_call]` is ignored.
+- List BAM files of matched tumor/normals in sample.csv. Acceptable file format is a sample config file of Genomon2. Use `[bam_import]` to specify BAM files, and `[mutation_call]` to specify pairs of tumors and normals. Panel field of `[mutation_call]` is ignored.
 - Specify file path for reference human genome GRCh37 as `ref_fasta` of genomon.cfg. Other fields are ignored.
 #### 4. Run pipeline
 ```
