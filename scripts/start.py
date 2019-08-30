@@ -36,6 +36,7 @@ def make_config(tumor_id, tumor_bam, normal_bam, ref_fasta, n_threads):
 def analyze_tn_pair(qsub_script, cwl_file, config_file, n_threads):
     command = "qsub -l os7 -cwd -j y -pe def_slot {} {} {} {}".format(
         n_threads, qsub_script, cwl_file, config_file)
+    print(command)
     subprocess.call(command, shell=True)
 
 
