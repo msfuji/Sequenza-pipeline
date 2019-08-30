@@ -33,8 +33,9 @@ def make_config(tumor_id, tumor_bam, normal_bam, ref_fasta, n_threads):
     return config_file
 
 
-def analyze_tn_pair(run_script, config_file):
-    command = "qsub -l os7 -cwd -j y {} {}".format(run_script, config_file)
+def analyze_tn_pair(qsub_script, cwl_file, config_file):
+    command = "qsub -l os7 -cwd -j y {} {}".format(qsub_script,
+        cwl_file, config_file)
     subprocess.call(command, shell=True)
 
 
@@ -60,7 +61,9 @@ sample_conf.parse_file(sample_conf_file)
 #
 # analyze pairs of tumor/normal
 #
-run_script = os.path.join(os.getcwd(), 'scripts', 'run-cwl.sh')
+cwd = os.getcwd()
+run_script = os.path.join(cwd, 'scripts', 'run-cwl.sh')
+cwl_file = os.path.join(cwd, 'sequenza-command.cwl')
 for tumor_id, normal_id, _ in sample_conf.mutation_call:
     tumor_bam = sample_conf.bam_import[tumor_id]
     normal_bam = sample_conf.bam_import[normal_id]
@@ -71,4 +74,4 @@ for tumor_id, normal_id, _ in sample_conf.mutation_call:
     with pushd(outdir):
         config_file = make_config(tumor_id, tumor_bam, normal_bam,
             ref_fasta, n_threads)
-        analyze_tn_pair(run_script, config_file)
+        analyze_tn_pair(qsub_script, cwl_file, config_file)
