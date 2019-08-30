@@ -7,7 +7,7 @@ label: Sequenza-command
 
 requirements:
   DockerRequirement:
-    dockerPull: mfrkn/sequenza-pipeline:latest
+    dockerPull: mfrkn/sequenza-pipeline:v0.1
   ResourceRequirement:
     ramMin: 8192
 
