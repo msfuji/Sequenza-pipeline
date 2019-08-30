@@ -33,9 +33,9 @@ def make_config(tumor_id, tumor_bam, normal_bam, ref_fasta, n_threads):
     return config_file
 
 
-def analyze_tn_pair(qsub_script, cwl_file, config_file):
-    command = "qsub -l os7 -cwd -j y {} {}".format(qsub_script,
-        cwl_file, config_file)
+def analyze_tn_pair(qsub_script, cwl_file, config_file, n_threads):
+    command = "qsub -l os7 -cwd -j y -pe def_slot {} {} {} {}".format(
+        n_threads, qsub_script, cwl_file, config_file)
     subprocess.call(command, shell=True)
 
 
@@ -74,4 +74,4 @@ for tumor_id, normal_id, _ in sample_conf.mutation_call:
     with pushd(outdir):
         config_file = make_config(tumor_id, tumor_bam, normal_bam,
             ref_fasta, n_threads)
-        analyze_tn_pair(qsub_script, cwl_file, config_file)
+        analyze_tn_pair(qsub_script, cwl_file, config_file, n_threads)
