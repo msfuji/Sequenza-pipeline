@@ -48,7 +48,7 @@ inputs:
 
 outputs:
   seqz:
-    type: File
+    type: File[]
     outputBinding:
       glob: '*.seqz.gz'
   cn_bars:
