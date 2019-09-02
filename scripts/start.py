@@ -25,7 +25,7 @@ def make_config(tumor_id, tumor_bam, normal_bam, ref_fasta, n_threads):
     'tumor-bam': {'class': 'File', 'path': tumor_bam},
     'normal-bam': {'class': 'File', 'path': normal_bam},
     'reference-fasta': {'class': 'File', 'path': ref_fasta},
-    'num-threads': n_threads / 2
+    'num-threads': n_threads // 2
     }
     config_file = 'config.json'
     with open(config_file, 'w') as f:
@@ -49,7 +49,7 @@ if len(sys.argv) != 3:
     exit(1)
 genomon_conf_file = sys.argv[1]
 sample_conf_file = sys.argv[2]
-n_threads = 8
+n_threads = 12
 
 #
 # read config files
