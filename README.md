@@ -28,11 +28,10 @@ To install cwltool in SHIROKANE,
 ```
 pip install cwlref-runner --user
 ```
-and add
+and add the following command to `~/.bashrc`.
 ```
 export PATH=$PATH:~/.local/bin
 ```
-to `~.bashrc`.
 
 #### 1. Download pipeline
 ```
