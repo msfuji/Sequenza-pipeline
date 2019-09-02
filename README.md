@@ -24,6 +24,14 @@ cwl-runner sequenza-command.cwl config.yaml
 
 ## Usage for multiple pairs of tumor/normals
 This option is available only for users of the SHIROKANE supercomputer.
+To install cwltool in SHIROKANE,
+```
+pip install cwlref-runner --user
+```
+and add the following command to `~/.bashrc`.
+```
+export PATH=$PATH:~/.local/bin
+```
 
 #### 1. Download pipeline
 ```
